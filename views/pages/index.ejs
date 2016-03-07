@@ -15,7 +15,7 @@ $(document).ready(function(){
 	        	$.each(response.results, function (i, item) {
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
-	        	$('#div1').append(trHTML);
+	        	$('#div1 table').append(trHTML);
 			$('#div1').show();
         	});
     	});

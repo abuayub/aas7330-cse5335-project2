@@ -12,7 +12,7 @@ $(document).ready(function(){
         		alert(response);
 			$('#div1').show();
 			var trHTML = '';
-	        	$.each(response, function (i, item) {
+	        	$.each(response.results, function (i, item) {
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
 	        	$('#div1').append(trHTML);

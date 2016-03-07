@@ -6,10 +6,10 @@
 <script>
 $(document).ready(function(){
 	$('#div1').hide();
-	$("button").click(function(){
+	$("#getstats").click(function(){
 		var dburl = "https://frozen-plateau-15908.herokuapp.com/db";
         	$.get(dburl, function(response){
-        		alert(response);
+        		//alert(response);
 			$('#div1').show();
 			var trHTML = '';
 	        	$.each(response.results, function (i, item) {
@@ -51,8 +51,8 @@ $(document).ready(function(){
 	</div>
 	
 	
-	<a class="subscribe button" href="#21">Get Stats</a>
-	<button>Get Stats</button>
+	<a id ="getstats" class="subscribe button" href="#21">Get Stats</a>
+	<!-- <button>Get Stats</button> -->
 	<div id="div1"  class="loading block">
         <table style="width:100%; color:white">
   		<tr>

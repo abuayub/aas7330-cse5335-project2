@@ -6,16 +6,16 @@
 <script>
 $(document).ready(function(){
 	$('#div1').hide();
-	$("button").click(function(){
+	$("#getstats").click(function(){
 		var dburl = "https://frozen-plateau-15908.herokuapp.com/db";
         	$.get(dburl, function(response){
-        		alert(response);
+        		//alert(response);
 			$('#div1').show();
 			var trHTML = '';
 	        	$.each(response.results, function (i, item) {
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
-	        	$('#div1').append(trHTML);
+	        	$('#div1 table').append(trHTML);
 			$('#div1').show();
         	});
     	});
@@ -51,7 +51,7 @@ $(document).ready(function(){
 	</div>
 	
 	
-	<a class="subscribe button" href="#21">Get Stats</a>
+	<a id ="getstats" class="subscribe button" href="#21">Get Stats</a>
 	<button>Get Stats</button>
 	<div id="div1"  class="loading block">
         <table style="width:100%; color:white">

@@ -51,7 +51,7 @@ $(document).ready(function(){
 	</div>
 	
 	
-	<a id ="getstats" class="subscribe button" href="#21">Get Stats</a>
+	<a id ="getstats" class="subscribe button">Get Stats</a>
 	<!-- <button>Get Stats</button> -->
 	<div id="div1"  class="loading block">
         <table style="width:100%; color:white">
@@ -63,15 +63,7 @@ $(document).ready(function(){
 	 	<td>Winner</td>
 		<td>Team</td>
 		</tr>
-	  <tr>
-	    	<td>1</td>
-		<td>Australian Grand Prix</td>
-		<td>Australia Melbourne Grand Prix Circuit, Melbourne</td>
-		<td>15-Mar</td>
-		<td>Lewis Hamilton</td>
-		<td>Mercedes</td>
-	  </tr>
-	</table>
+	  	</table>
 	</div>
     </body>
 </html>

@@ -59,8 +59,8 @@ $(document).ready(function(){
         		});
     			}
 
-			var w = 300;
-			var h = 300;
+			var w = 250;
+			var h = 250;
 			var r = h/2;
 			var color = d3.scale.category20c();
 			var data =[];
@@ -71,7 +71,7 @@ $(document).ready(function(){
 				driverper +="<li><p class='ios os scnd-font-color'>"+item+"</p><p class='os-percentage'>"+driverVictory[item]/location.length*100+"<sup>%</sup></p></li>";
         		});
 			console.log(driverper);
-	        	$('.os-percentages horizontal-list').html(driverper);
+	        	$('.os-percentages.horizontal-list').html(driverper);
 
 
 

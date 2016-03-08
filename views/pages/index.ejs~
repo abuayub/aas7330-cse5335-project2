@@ -70,7 +70,8 @@ $(document).ready(function(){
 				data.push({label:item, value:driverVictory[item]});
 				driverper +="<li><p class='ios os scnd-font-color'>"+item+"</p><p class='os-percentage'>"+driverVictory[item]/location.length*100+"<sup>%</sup></p></li>";
         		});
-	        	$('.os-percentages horizontal-list').html(driverper);
+			console.log(driverper);
+	        	$('.os-percentages.horizontal-list').html(driverper);
 
 
 

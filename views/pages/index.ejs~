@@ -38,7 +38,7 @@
 	
 	<a id ="getstats" class="subscribe button">Get Stats</a>
 	<!-- <button>Get Stats</button> -->
-	<div id="div1"  class="loading block">
+	<div id="div1"  class="loading block" style="">
         <table style="width:100%; color:white">
   		<thead>
 		<tr>
@@ -65,6 +65,11 @@
                         
                     </ul>
                 </div>
+	</div>
+	<div class="donut-chart-block block"> 
+		<p style="text-align:center">
+			University of Texas at Arlington.  Created by: Ayub © 2016 
+		</p>
 	</div>
     </body>
 </html>

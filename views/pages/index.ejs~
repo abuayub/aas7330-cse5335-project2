@@ -8,7 +8,8 @@
 <script>
 $(document).ready(function(){
 	$('#div1').hide();
-	$('#mapdiv').hide();
+	$('#visual').hide();
+	
 	var location = [];
 	var driverVictory = {};
 	var driver= []; 
@@ -39,7 +40,7 @@ $(document).ready(function(){
 
 	$("#map").click(function(){
 			console.log(location);
-			$('#mapdiv').show();
+			$('#visual').show();
  			// Create a map object and specify the DOM element for display.
   			var map = new google.maps.Map(document.getElementById("mapdiv"), {
     				center: {lat: 0, lng: 0},
@@ -58,8 +59,8 @@ $(document).ready(function(){
         		});
     			}
 
-			var w = 250;
-			var h = 250;
+			var w = 300;
+			var h = 300;
 			var r = h/2;
 			var color = d3.scale.category20c();
 			var data =[];
@@ -142,9 +143,9 @@ $(document).ready(function(){
 	 </table>
 	 <a id ="map" class="subscribe button">Visualize</a>
 	</div>
-	<div>
-	<div id="mapdiv"  class="loading block" style ="height:400px; width: 550px"></div>
-	<div id="chart"  class="loading block" style ="height:250px; width: 250px"></div>	
+	<div id="visual">
+	<div id="mapdiv"  class="loading block" style ="height:400px; width: 530px; float:left"></div>
+	<div id="chart"  class="loading block" style ="height:400px; width: 400px;; float:right"></div>	
 	</div>
     </body>
 </html>

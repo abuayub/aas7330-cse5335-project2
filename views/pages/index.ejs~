@@ -33,7 +33,7 @@ $(document).ready(function(){
 				}	
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
-	        	$('#div1 table').html(trHTML);
+	        	$('#div1 table tbody').html(trHTML);
 			$('#div1').show();
         	});
     	});
@@ -138,14 +138,17 @@ $(document).ready(function(){
 	<!-- <button>Get Stats</button> -->
 	<div id="div1"  class="loading block">
         <table style="width:100%; color:white">
-  		<tr>
+  		<thead>
+		<th>
 	  	<td>Race</td>	
 		<td>Grand Prix</td>
 		<td>Location</td>
 		<td>Date</td>
 	 	<td>Winner</td>
 		<td>Team</td>
-		</tr>
+		</th>
+		</thead>
+		<tbody></tbody>
 	 </table>
 	 <a id ="map" class="subscribe button">Visualize</a>
 	</div>
@@ -153,7 +156,7 @@ $(document).ready(function(){
 	<div id="mapdiv"  class="loading block" style ="height:400px; width: 530px; float:left"></div>
 	<div class="donut-chart-block block" style ="height:400px; width: 400px;; float:right"> 
                     <h2 class="titular">Driver Champions</h2>
-                    <div class="chart">
+                    <div id="chart">
                         
                     </div>
                     <ul class="os-percentages horizontal-list">

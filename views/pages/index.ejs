@@ -31,7 +31,7 @@ $(document).ready(function(){
 			$('#mapdiv').show();
  			// Create a map object and specify the DOM element for display.
   			var map = new google.maps.Map(document.getElementById("mapdiv"), {
-    				center: {lat: 0, lng: 0},
+    				center: {lat: 180, lng: 180},
     				scrollwheel: false,
     				zoom: 1
   			});
@@ -95,7 +95,7 @@ $(document).ready(function(){
 	 </table>
 	 <a id ="map" class="subscribe button">Visualize</a>
 	</div>
-	<div id="mapdiv"  class="loading block">
+	<div id="mapdiv"  class="loading block" style ="height:500px">
 	
 	</div>
 

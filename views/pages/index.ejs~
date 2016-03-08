@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="/stylesheets/wdm.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
 
 <script>
 $(document).ready(function(){
@@ -27,6 +27,7 @@ $(document).ready(function(){
     	});
 
 	$("#map").click(function(){
+			console.log(location);
 			$('#mapdiv').show();
  			// Create a map object and specify the DOM element for display.
   			var map = new google.maps.Map(document.getElementById("mapdiv"), {
@@ -35,7 +36,7 @@ $(document).ready(function(){
     				zoom: 1
   			});
 			for (var x = 0; x < location.length; x++) {
-	        	$.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
+	        	$.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+location[x]+'&sensor=false', null, function (data) {
         	    	var p = data.results[0].geometry.location
             		var latlng = new google.maps.LatLng(p.lat, p.lng);
             		new google.maps.Marker({
@@ -94,7 +95,7 @@ $(document).ready(function(){
 	 </table>
 	 <a id ="map" class="subscribe button">Visualize</a>
 	</div>
-	<div id="mapdiv"  class="loading block">
+	<div id="mapdiv"  class="loading block" style ="height:500px">
 	
 	</div>
 

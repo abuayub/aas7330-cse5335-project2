@@ -2,8 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" href="/stylesheets/wdm.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?libraries=places"></script>
 
 <script>
 $(document).ready(function(){
@@ -11,14 +11,14 @@ $(document).ready(function(){
 	$('#mapdiv').hide();
 	var location = [];
 	$("#getstats").click(function(){
-		var dburl = "https://frozen-plateau-15908.herokuapp.com/db";
+		var dburl = "//frozen-plateau-15908.herokuapp.com/db";
 
         	$.get(dburl, function(response){
         		//alert(response);
 			$('#div1').show();
 			var trHTML = '';
 	        	$.each(response.results, function (i, item) {
-				location.push(item.gp);
+				location.push(item.location);
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
 	        	$('#div1 table').append(trHTML);

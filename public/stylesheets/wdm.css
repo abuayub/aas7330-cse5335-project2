@@ -115,14 +115,12 @@ margin-bottom:10px;
 background:#0f9295;
 }
 
-/** MAIN CONTAINER **/
-
 .main-container {
 	font-family: 'Ubuntu', sans-serif;
 	width: 950px;
 	margin: 6em auto;
 }	
-	/*********************************************** HEADER ***********************************************/
+
 	header {
 		height: 80px;
 	}

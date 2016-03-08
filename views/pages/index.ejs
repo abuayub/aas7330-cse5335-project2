@@ -18,7 +18,7 @@ $(document).ready(function(){
 			$('#div1').show();
 			var trHTML = '';
 	        	$.each(response.results, function (i, item) {
-				location.push(item.location);
+				location.push(item.gp);
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
 	        	$('#div1 table').append(trHTML);
@@ -95,7 +95,7 @@ $(document).ready(function(){
 	 </table>
 	 <a id ="map" class="subscribe button">Visualize</a>
 	</div>
-	<div id="mapdiv"  class="loading block" style ="height:500px">
+	<div id="mapdiv"  class="loading block" style ="height:500px width: 800px">
 	
 	</div>
 

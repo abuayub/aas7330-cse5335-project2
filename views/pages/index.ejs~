@@ -18,7 +18,7 @@ $(document).ready(function(){
 			$('#div1').show();
 			var trHTML = '';
 	        	$.each(response.results, function (i, item) {
-				location.push(item.location);
+				location.push(item.gp);
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
 	        	$('#div1 table').append(trHTML);
@@ -31,7 +31,7 @@ $(document).ready(function(){
 			$('#mapdiv').show();
  			// Create a map object and specify the DOM element for display.
   			var map = new google.maps.Map(document.getElementById("mapdiv"), {
-    				center: {lat: 180, lng: 180},
+    				center: {lat: 0, lng: 0},
     				scrollwheel: false,
     				zoom: 1
   			});

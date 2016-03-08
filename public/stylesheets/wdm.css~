@@ -450,7 +450,7 @@ h1, h2, p, a, span{
 					padding-top: 36px;
 				}
         .os-percentages li {
-					width: 75px;
+					width: 133px;
 					border-left: 1px solid #394264;
 					text-align: center;					
 					background: #50597b;

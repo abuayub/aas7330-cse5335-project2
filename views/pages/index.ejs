@@ -33,7 +33,7 @@ $(document).ready(function(){
 				}	
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
-	        	$('#div1 table').append(trHTML);
+	        	$('#div1 table').html(trHTML);
 			$('#div1').show();
         	});
     	});
@@ -64,9 +64,15 @@ $(document).ready(function(){
 			var r = h/2;
 			var color = d3.scale.category20c();
 			var data =[];
+			var driverper = "";
 			$.each(driver, function(i,item)
 			{
-				data.push({label:item, value:driverVictory[item]}); 
+				data.push({label:item, value:driverVictory[item]});
+				driverper +="<li><p class='ios os scnd-font-color'>"+item+"</p><p class='os-percentage'>"+driverVictory[item]/location.length*100+"<sup>%</sup></p></li>";
+        		});
+	        	$('.os-percentages horizontal-list').html(driverper);
+
+
 			} );
 			var vis = d3.select('#chart').append("svg:svg").data([data]).attr("width", w).attr("height", h).append("svg:g").attr("transform", "translate(" + r + "," + r + ")");
 			var pie = d3.layout.pie().value(function(d){return d.value;});
@@ -145,7 +151,15 @@ $(document).ready(function(){
 	</div>
 	<div id="visual">
 	<div id="mapdiv"  class="loading block" style ="height:400px; width: 530px; float:left"></div>
-	<div id="chart"  class="loading block" style ="height:400px; width: 400px;; float:right"></div>	
+	<div class="donut-chart-block block" style ="height:400px; width: 400px;; float:right"> 
+                    <h2 class="titular">Driver Champions</h2>
+                    <div class="chart">
+                        
+                    </div>
+                    <ul class="os-percentages horizontal-list">
+                        
+                    </ul>
+                </div>
 	</div>
     </body>
 </html>

@@ -1,16 +1,10 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:400,700);
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-}
+
 /* fontawesome */
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
-/* zocial */
-[class*="zocial-"]:before {
-  font-family: 'zocial', sans-serif;
-}
+
 
 * {
   -webkit-box-sizing: border-box;

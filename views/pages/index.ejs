@@ -18,7 +18,7 @@ $(document).ready(function(){
 			$('#div1').show();
 			var trHTML = '';
 	        	$.each(response.results, function (i, item) {
-				location.push(item.gp);
+				location.push(item.location);
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
 	        	$('#div1 table').append(trHTML);

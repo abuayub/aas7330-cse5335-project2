@@ -68,7 +68,7 @@ $(document).ready(function(){
 			$.each(driver, function(i,item)
 			{
 				data.push({label:item, value:driverVictory[item]});
-				driverper +="<li><p class='ios os scnd-font-color'>"+item+"</p><p class='os-percentage'>"+driverVictory[item]/location.length*100.toFixed(1)+"<sup>%</sup></p></li>";
+				driverper +="<li><p class='ios os scnd-font-color'>"+item+"</p><p class='os-percentage'>"+(driverVictory[item]/location.length*100).toFixed(1)+"<sup>%</sup></p></li>";
         		});
 			console.log(driverper);
 	        	$('.os-percentages.horizontal-list').html(driverper);
@@ -154,7 +154,7 @@ $(document).ready(function(){
 	 <a id ="map" class="subscribe button">Visualize</a>
 	</div>
 	<div id="visual">
-	<div id="mapdiv"  class="loading block" style ="height:400px; width: 530px; float:left"></div>
+	<div id="mapdiv"  class="loading block" style ="height:450px; width: 530px; float:left"></div>
 	<div class="donut-chart-block block" style ="height:400px; width: 400px;; float:right"> 
                     <h2 class="titular">Driver Champions</h2>
                     <div id="chart">

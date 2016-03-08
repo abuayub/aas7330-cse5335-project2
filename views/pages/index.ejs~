@@ -95,7 +95,7 @@ $(document).ready(function(){
 	 </table>
 	 <a id ="map" class="subscribe button">Visualize</a>
 	</div>
-	<div id="mapdiv"  class="loading block" style ="height:500px">
+	<div id="mapdiv"  class="loading block" style ="height:500px width: 800px">
 	
 	</div>
 

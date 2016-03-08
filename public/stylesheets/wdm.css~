@@ -3,8 +3,8 @@
 
 
 /************************************ FONTS ************************************/
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
-@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+@import url(//fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(//weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -238,7 +238,6 @@ h1, h2, p, a, span{
 .main-container {
 	font-family: 'Ubuntu', sans-serif;
 	width: 950px;
-	height: 1725px;
 	margin: 6em auto;
 }	
 	/*********************************************** HEADER ***********************************************/

@@ -3,8 +3,7 @@
 
 
 /************************************ FONTS ************************************/
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
-@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+@import url(//fonts.googleapis.com/css?family=Ubuntu:400,700);
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -17,17 +16,6 @@
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
 }
-@font-face {
-	font-family: 'icomoon';
-	src:url('http://jlalovi-cv.herokuapp.com/font/icomoon.eot');
-	src:url('http://jlalovi-cv.herokuapp.com/font/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('http://jlalovi-cv.herokuapp.com/font/icomoon.ttf') format('truetype'),
-		url('http://jlalovi-cv.herokuapp.com/font/icomoon.woff') format('woff'),
-		url('http://jlalovi-cv.herokuapp.com/font/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;

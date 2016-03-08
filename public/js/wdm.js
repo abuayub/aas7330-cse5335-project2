@@ -6,7 +6,7 @@ $(document).ready(function(){
 	var driverVictory = {};
 	var driver= []; 
 	$("#getstats").click(function(){
-		var dburl = "//frozen-plateau-15908.herokuapp.com/db";
+		var dburl = "//cse5335-aas7330.herokuapp.com/db";
 
         	$.get(dburl, function(response){
         		//alert(response);

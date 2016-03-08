@@ -37,7 +37,7 @@ $(document).ready(function(){
   			});
 			for (var x = 0; x < location.length; x++) {
 	        	$.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+location[x]+'&sensor=false', null, function (data) {
-        	    	var p = data.results[0].geometry.location
+        	    	var p = data.results[0].geometry.location;
             		var latlng = new google.maps.LatLng(p.lat, p.lng);
             		new google.maps.Marker({
                 	position: latlng,
@@ -95,7 +95,7 @@ $(document).ready(function(){
 	 </table>
 	 <a id ="map" class="subscribe button">Visualize</a>
 	</div>
-	<div id="mapdiv"  class="loading block" style ="height:500px; width: 800px">
+	<div id="mapdiv"  class="loading block" style ="height:400px; width: 550px">
 	
 	</div>
 

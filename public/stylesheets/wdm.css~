@@ -183,6 +183,7 @@ h1, h2, p, a, span{
 .subscribe.button{
 background:#11a8ab;
 margin-top:10px;
+margin-bottom:10px;
 }
 .subscribe.button:hover{
 background:#0f9295;

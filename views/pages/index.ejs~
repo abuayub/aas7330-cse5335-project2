@@ -67,13 +67,14 @@
 		</div>
 
 	
-	<div class="donut-chart-block block" style="clear:both; height:30px"> 
-		<p style="text-align:center">
+	
+	</div>
+	<div class="donut-chart-block block" style="clear:both; height:30px; padding-top:7px"> 
+		<p style="text-align:center; margin-top:0px">
 			University of Texas at Arlington.  Created by: Ayub © 2016 
 		</p>
 	</div>
-	</div>
-
+</div>
     </body>
 
 </html>

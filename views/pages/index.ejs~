@@ -4,14 +4,15 @@
 <link rel="stylesheet" href="/stylesheets/wdm.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-<script src="jquery.geocomplete.js"></script>
+
 <script>
 $(document).ready(function(){
 	$('#div1').hide();
 	$('#mapdiv').hide();
+	var location = [];
 	$("#getstats").click(function(){
 		var dburl = "https://frozen-plateau-15908.herokuapp.com/db";
-		var location = [];
+
         	$.get(dburl, function(response){
         		//alert(response);
 			$('#div1').show();

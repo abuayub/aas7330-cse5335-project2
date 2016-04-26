@@ -1,39 +1,16 @@
-# node-js-getting-started
+# CSE 5335 Spring 2016 Project 1.
+ - Name: Abu Ayub Ansari Syed
+ - UTA ID: 1001297330
+ - Email: abuayubansari.syed@mavs.uta.edu
+ - Affiliation: University of Texas at Arlington
+ - Website URL: http://cse5335-aas7330.herokuapp.com/
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
-
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
-
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+### a) What aspect of the implementation did you find easy, if any, and why?
+ - As it was continuations of the Projecct 1, Server, db, github setups were not an issue.
+ - AJAX calls were just simple but larger implementations.
+### b) What aspect of the implementation did you find hard, if any, and why?
+ - None. A little difficulty in understanding the functionality of animation.(Credit: Codepen.io)
+ - Animation based on CSS is used.(Loading)
+### c) If you were to use these technologies professionally, what would be your biggest concern?
+ - AJAX calls based on form data in larger volume.
+ - Text data from server side using AJAX calls.

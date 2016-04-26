@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//$('#div1').hide();
+	$('#div1').hide();
 	$('#visual').hide();
 	//$('#div1 table tfoot').hide();
 	var location = [];

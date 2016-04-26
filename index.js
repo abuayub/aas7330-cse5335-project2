@@ -5,13 +5,15 @@ var pg = require('pg');
 
 app.get('/db', function (request, response) {
   pg.connect(process.env.DATABASE_URL,function(err, client, done) {
-
+	console.log(request);
     client.query('SELECT * FROM formula WHERE race= ($1)',[request.params.id], function(err, result) {
       done();
       if (err)
        { console.error(err); response.send("Error " + err); }
       else
        { 
+	
+	console.log(result.rows);
 	response.send({results:result.rows});
 	//response.render('pages/db', {results: result.rows} ); 
 	}

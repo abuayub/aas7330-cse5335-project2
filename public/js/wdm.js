@@ -1,14 +1,16 @@
 $(document).ready(function(){
 	$('#div1').hide();
 	$('#visual').hide();
-	
+	$('#div1 table tfoot').hide();
 	var location = [];
 	var driverVictory = {};
 	var driver= []; 
 	$("#getstats").click(function(){
 		var dburl = "//cse5335-aas7330.herokuapp.com/db";
 		function time(j){setTimeout(function(){
+			$('#div1 table tfoot').show();
 			$.get(dburl,{ id: j}, function(response){
+			$('#div1 table tfoot').hide();
         		//alert(response);
 			$('#div1').show();
 			var trHTML = '';

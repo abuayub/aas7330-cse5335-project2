@@ -27,14 +27,14 @@ $(document).ready(function(){
         		});
 			
 	        	$('#div1 table tbody').append(trHTML);
-			if($('#div1 table tbody tr').length >10)
+			if($('#div1 table tbody tr').length >20)
 			{$('#div1 table tbody tr:first').remove()}			
 			$('#div1').show();
         	});
 		}, j*500);}
 
 		$('#div1 table tfoot').show();
-		for(var i=1 ; i<100; i++){
+		for(var i=1 ; i<=100; i++){
 		time(i);
 		}
 		setTimeout(function(){$('#div1 table tfoot').hide();}, 101*500);

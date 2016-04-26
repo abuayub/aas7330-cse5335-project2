@@ -34,10 +34,10 @@ $(document).ready(function(){
 		}, j*500);}
 
 		$('#div1 table tfoot').show();
-		for(var i=1 ; i<20; i++){
+		for(var i=1 ; i<=100; i++){
 		time(i);
 		}
-		setTimeout(function(){$('#div1 table tfoot').hide();}, 21*500);
+		setTimeout(function(){$('#div1 table tfoot').hide();}, 101*500);
     	});
 
 	$("#map").click(function(){

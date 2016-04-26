@@ -34,7 +34,7 @@ $(document).ready(function(){
 		for(var i=1 ; i<20; i++){
 		time(i);
 		}
-		setTimeout(funtion(){$('#div1 table tfoot').hide();}, 21*500);
+		setTimeout(function(){$('#div1 table tfoot').hide();}, 21*500);
     	});
 
 	$("#map").click(function(){

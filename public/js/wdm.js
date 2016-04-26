@@ -7,11 +7,8 @@ $(document).ready(function(){
 	var driver= []; 
 	$("#getstats").click(function(){
 		var dburl = "//cse5335-aas7330.herokuapp.com/db";
-		for(var i=1 ; i<20; i++){
-		setTimeout(function(){
-			
-		},500);
-        	$.get(dburl,{ id: i}, function(response){
+		function time(j){setTimeout(function(){
+			$.get(dburl,{ id: j}, function(response){
         		//alert(response);
 			$('#div1').show();
 			var trHTML = '';
@@ -31,7 +28,9 @@ $(document).ready(function(){
 	        	$('#div1 table tbody').append(trHTML);
 			$('#div1').show();
         	});
-		
+		}, j*500);}
+		for(var i=1 ; i<20; i++){
+		time(i);
 		}
     	});
 

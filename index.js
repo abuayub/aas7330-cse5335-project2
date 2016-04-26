@@ -4,10 +4,10 @@ var app = express();
 var pg = require('pg');
 
 app.get('/db', function (request, response) {
-  pg.connect(process.env.DATABASE_URL,function(err, client, done) {
+  pg.connect(process.env.DATABASE_URL,i,function(err, client, done) {
 
     var data= {request.body.id};
-    client.query('SELECT * FROM formula WHERE race= $1',[data.id], function(err, result) {
+    client.query('SELECT * FROM formula WHERE race= ($1)',[data.id], function(err, result) {
       done();
       if (err)
        { console.error(err); response.send("Error " + err); }

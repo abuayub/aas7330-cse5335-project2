@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#div1').hide();
 	$('#visual').hide();
-	//$('#div1 table tfoot').hide();
+	$('#div1 table tfoot').hide();
 	var location = [];
 	var driverVictory = {};
 	var driver= []; 
@@ -10,7 +10,6 @@ $(document).ready(function(){
 		function time(j){setTimeout(function(){
 			$('#div1 table tfoot').show();
 			$.get(dburl,{ id: j}, function(response){
-			$('#div1 table tfoot').hide();
         		//alert(response);
 			$('#div1').show();
 			var trHTML = '';
@@ -28,9 +27,10 @@ $(document).ready(function(){
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
 	        	$('#div1 table tbody').append(trHTML);
+			$('#div1 table tfoot').hide();
 			$('#div1').show();
         	});
-		}, j*500);}
+		}, j*3000);}
 		for(var i=1 ; i<20; i++){
 		time(i);
 		}

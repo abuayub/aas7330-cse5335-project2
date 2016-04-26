@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#div1').hide();
 	$('#visual').hide();
-	//$('#div1 table tfoot').hide();
+	$('#div1 table tfoot').hide();
 	var location = [];
 	var driverVictory = {};
 	var driver= []; 
@@ -30,7 +30,7 @@ $(document).ready(function(){
 	        	$('#div1 table tbody').append(trHTML);
 			$('#div1').show();
         	});
-		}, j*500);}
+		}, j*3000);}
 		for(var i=1 ; i<20; i++){
 		time(i);
 		}

@@ -25,7 +25,10 @@ $(document).ready(function(){
 				}	
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
+			
 	        	$('#div1 table tbody').append(trHTML);
+			if($('#div1 table tbody tr').length() >10)
+			{$('#div1 table tbody tr:first').remove()}			
 			$('#div1').show();
         	});
 		}, j*500);}

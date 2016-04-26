@@ -285,15 +285,12 @@ background:#0f9295;
 		
 
 .cs-loader {
-  position: absolute;
   top: 0;
   left: 0;
 }
 
 .cs-loader-inner {
   transform: translateY(-50%);
-
-  position: absolute;
   width: calc(100% - 200px);
   color: #FFF;
   padding: 0 100px;

@@ -1,4 +1,4 @@
-# CSE 5335 Spring 2016 Project 1.
+# CSE 5335 Spring 2016 Project 2.
  - Name: Abu Ayub Ansari Syed
  - UTA ID: 1001297330
  - Email: abuayubansari.syed@mavs.uta.edu

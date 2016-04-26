@@ -6,7 +6,7 @@ var pg = require('pg');
 app.get('/db', function (request, response) {
   pg.connect(process.env.DATABASE_URL,function(err, client, done) {
 	console.log(request);
-    client.query('SELECT * FROM formula WHERE race= ($1)',[request.params.id], function(err, result) {
+    client.query('SELECT * FROM formula WHERE race= ($1)',[request.query.id], function(err, result) {
       done();
       if (err)
        { console.error(err); response.send("Error " + err); }

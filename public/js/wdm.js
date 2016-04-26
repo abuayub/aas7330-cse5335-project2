@@ -15,13 +15,13 @@ $(document).ready(function(){
 	        	$.each(response.results, function (i, item) {
 				location.push(item.location);
 
-				if(driverVictory[item.winner])
+				if(driverVictory[item.winner.trim()])
 				{ 
-					driverVictory[item.winner]=driverVictory[item.winner]+1;
+					driverVictory[item.winner.trim()]=driverVictory[item.winner.trim()]+1;
 				}
 				else{
-					driverVictory[item.winner] = 1;
-					driver.push(item.winner);
+					driverVictory[item.winner.trim()] = 1;
+					driver.push(item.winner.trim());
 				}	
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});

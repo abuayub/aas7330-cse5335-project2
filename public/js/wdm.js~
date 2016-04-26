@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#div1').hide();
 	$('#visual').hide();
-	$('#div1 table tfoot').hide();
+	//$('#div1 table tfoot').hide();
 	var location = [];
 	var driverVictory = {};
 	var driver= []; 

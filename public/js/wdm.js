@@ -8,7 +8,8 @@ $(document).ready(function(){
 	$("#getstats").click(function(){
 		var dburl = "//cse5335-aas7330.herokuapp.com/db";
 		for(var i=1 ; i<20; i++){
-        	$.get(dburl,{ id: i}, function(response){
+		setTimeout(function(){
+			$.get(dburl,{ id: i}, function(response){
         		//alert(response);
 			$('#div1').show();
 			var trHTML = '';
@@ -25,9 +26,12 @@ $(document).ready(function(){
 				}	
         	    		trHTML += '<tr><td>' + item.race + '</td><td>' + item.gp + '</td><td>' + item.location + '</td><td>' + item.date + '</td><td>' + item.winner + '</td><td>' + item.team + '</td></tr>';
         		});
-	        	$('#div1 table tbody').html(trHTML);
+	        	$('#div1 table tbody').append(trHTML);
 			$('#div1').show();
         	});
+		},i*500);
+        	
+		
 		}
     	});
 

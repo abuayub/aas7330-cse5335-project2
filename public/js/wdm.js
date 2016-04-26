@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var driver= []; 
 	$("#getstats").click(function(){
 		var dburl = "//cse5335-aas7330.herokuapp.com/db";
-		for(var i=1 ; i<20; i++){
+		for(var i = 1 ; i<20; i++){
         	$.get(dburl,{ id: i}, function(response){
         		//alert(response);
 			$('#div1').show();

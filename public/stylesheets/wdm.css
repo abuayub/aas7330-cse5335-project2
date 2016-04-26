@@ -288,13 +288,11 @@ background:#0f9295;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
 }
 
 .cs-loader-inner {
   transform: translateY(-50%);
-  top: 50%;
+
   position: absolute;
   width: calc(100% - 200px);
   color: #FFF;
